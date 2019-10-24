@@ -1,0 +1,1040 @@
+/* Reset defaults */
+*{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/* General presets */
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+	width: 100%;
+	font-family: Arial;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #322818;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+/* LOTOS */ 
+
+.lotos-logo {
+	position: absolute;
+	top: 6%;
+	left: 0.5%;
+	width: 70px;
+	height: 40px;
+}
+
+.ulaz {
+	float: right;
+	width: 32%;
+	height: 400px;
+	margin-top: -26.6%;
+	margin-right: 5%;
+	display: inline-block;
+}
+
+/* INDEX */ 
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.hero-text-box {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.soriya-h {
+	font-size: 20px;
+	font-style: italic;
+	color: white;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-family: 'Indie Flower', cursive;
+	margin-left: 15px;
+}
+
+h1 {
+	font-size: 100px;
+	color: white;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-family: 'Indie Flower', cursive;
+}
+
+.header-text {
+	font-size: 25px;
+	color: white;
+	margin-top: 1%;
+	margin-left: 5px;
+	letter-spacing: 1px;
+}
+
+.header-button {
+	margin-top: 2%;
+	width: 200px;
+	height: 50px;
+	border: 1.5px solid #7d272b;
+	background-color: #7d272b;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+	display: inline-block;
+}
+
+.header-button:hover {
+	background-color: transparent;
+	transition: 0.5s;
+}
+
+.header-button2 {
+	margin-top: 2%;
+	width: 200px;
+	height: 50px;
+	border: 1.5px solid #b83036;
+	background-color: #b83036;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+	display: inline-block;
+}
+
+.header-button2:hover {
+	background-color: transparent;
+	transition: 0.5s;
+}
+
+/* Menu section */
+
+.li {
+	display: none;
+}
+
+.menu-section {
+	position: absolute;
+	left: 10%;
+	top: 5%;
+	width: 70%;
+	height: 50px;
+	border-bottom: 2px solid white;
+}
+
+li {
+	display: inline-block;
+	line-height: 50px;
+	background-color: none;
+	color: white;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 13px;
+	width: auto;
+	padding: 0 20px;
+	transition: 0.3s;
+}
+
+li:hover {
+	background-color: white;
+	color: black;
+	transition: 0.3s;
+}
+
+#li-selected {
+	background-color: white;
+	color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.li-dropdown {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	transition: background-color 0.2s;
+	font-size: 13px;
+}
+
+.li-dropdown:hover {
+	background-color: #ddd;
+}
+
+/* Abous us section */
+
+.aboutUs-section {
+	width: 100%;
+	height: 110%;
+	background-color: #c4ac85;
+	position: relative;
+}
+
+#about-h {
+	display: inline-block;
+	font-size: 50px;
+	font-weight: bold;
+	color: #333232;
+	margin-left: 120px;
+	margin-top: 80px;
+	font-family: 'Indie Flower', cursive;
+}
+
+.about-us {
+	margin-left: 125px;
+	margin-top: 50px;
+	width: 50%;
+	color: #333232;
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+
+
+/* Massage section */
+
+.massage-section {
+	float: left;
+	width: 100%;
+	height: 160%;
+	background-color: #f5f5f5;
+}
+
+.offer {
+	margin-left: 125px;
+	margin-top: 3%;
+	font-weight: bold;
+	font-size: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	text-align: center;
+	width: 300px;
+	text-transform: uppercase;
+}
+
+.row {
+	max-width: 1400px;
+	margin: 0 auto;
+	margin-top: 3%;
+}
+
+.card {
+	transition: background-color 0.2s;
+	background-color: #edebeb;
+	border-radius: 5px;
+	height: 450px;
+}
+
+.card:hover {
+	background-color: #eccc68;
+}
+
+.card-img {
+	width: 90%;
+	margin-left: 5%;
+	height: 200px;
+	padding: 10px 0px;
+}
+
+.h-massage {
+	text-align: left;
+	font-weight: 300;
+	font-size: 18px;
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	color: #333232;
+	padding: 10px 10px;
+
+}
+
+.h-massage:hover {
+	color: black;
+}
+
+.about-massage {
+	font-size: 15px;
+	color: #333232;
+	padding: 10px 10px;
+}
+
+/* Pool section */
+
+.pool-section {
+	float: left;
+	width: 100%;
+	height: 150%;
+	background-color: #2f3542;
+	position: relative;
+}
+
+.pool {
+	margin-left: 125px;
+	margin-top: 3%;
+	font-weight: bold;
+	font-size: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid white;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	text-align: center;
+	width: 250px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.about-pool {
+	font-size: 50px;
+	font-weight: 300;
+	color: white;
+	margin-top: 5%;
+	margin-left: 10%;
+	width: 35%;
+}
+
+.pool-img-section {
+	float: right;
+	height: 45%;
+	width: 45%;
+	margin-right: 5%;
+	margin-top: -20%;
+	right: 0%;
+}
+
+.img {
+	width: 100%;;
+	height: auto;
+	margin-left: 3%;
+	margin-top: 2%;
+	display: inline-block;
+}
+
+.gallery-section-pool {
+	margin-top: 2%;
+	margin-left: 8.5%;
+	width: 90%;
+	height: auto;
+	float: left;
+}
+
+.gallery-img {
+	width: 22%;
+	height: 300px;
+	margin-right: 1%;
+	display: inline-block;
+	transition: opacity 0.2s;
+}
+
+/* REZERVACIJE */ 
+
+.reservation-section-light {
+	width: 90%;
+	height: 1200px;
+	margin-left: 5%;
+	margin-top: 4.8%;
+	background-color: #b99c6e;
+}
+
+.reservation-icon {
+	margin-top: 15%;
+	margin-left: 6%;
+	width: 50px;
+	height: 50px;
+}
+
+h3 {
+	margin-top: 1%;
+	margin-left: 6%;
+	font-size: 45px;
+	color: white;
+	font-weight: bold;
+}
+
+.reservation-text {
+	margin-top: 1%;
+	margin-left: 6%;
+	font-size: 16px;
+	font-weight: 300;
+	color: white;
+	width: 40%;
+}
+
+.payment {
+	margin-left: 6.5%;
+	margin-top: 22%;
+	color: white;
+	font-size: 16px;
+}
+
+.reservation-section {
+	width: 40%;
+	height: auto;
+	padding-bottom: 20px;
+	background-color: #c4ac85;
+	position: absolute;
+	top: 30%;
+	right: 10%;
+	margin-bottom: 5%;
+}
+
+/* Rezervacija */
+
+.reservation {
+	width: 70%;
+	height: 100%;
+	margin-left: 15%;
+	float: left;
+}
+
+.txt {
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+select {
+	width: 100%;
+	height: 40px;
+	margin-top: 3px;
+	border: 1px solid #827e7e;
+}
+
+.input {
+	width: 100%;
+	height: 40px;
+	margin-top: 3px;
+	border: 1px solid #827e7e;
+}
+
+.reservation-button {
+	margin-top: 15px;
+	width: 100%;
+	height: 45px;
+	background-color: #c44949;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	line-height: 45px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.reservation-button:hover {
+	background-color: #7d272b;
+	transition: 0.2s;
+}
+
+.info-logo {
+	position: absolute;
+	top: 90%;
+	left: 10%;
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.info {
+	display: none;
+}
+
+.info-logo:hover .info {
+	display: block;
+	position: absolute;
+	top: -15%;
+	left: 100%;
+	width: 400px;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	transition: 1s;
+}
+
+/* FOOTER */ 
+
+footer {
+	float: left;
+	width: 100%;
+	height: 120px;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.copyright {
+	float: left;
+	margin-left: 30px;
+	line-height: 120px;
+	font-size: 13px;
+	color: white;
+	font-weight: bold;
+}
+
+.flower {
+	position: absolute;
+	top: 25%;
+	right: 2%;
+	float: right;
+	height: 50%;
+	width: 100px;
+	opacity: 0.9;
+}
+
+/* O NAMA */
+
+.about-us-section{
+	width: 90%;
+	height: 1800px;
+	margin-left: 5%;
+	margin-top: 5.8%;
+	background-color: #b99c6e;
+}
+
+h6 {
+	font-size: 50px;
+	margin-left: 9.8%;
+	margin-top: 8%;
+	float: left;
+	color: #333232;
+	width: 77%;
+	font-weight: 300;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+
+.about-txt {
+	float: left;
+	margin-left: 10%;
+	margin-top: 2%;
+	font-size: 17px;
+	width: 50%;
+	color: #333232;
+	letter-spacing: 1px;
+}
+
+.about-txt-2 {
+	float: left;
+	margin-left: 9.8%;
+	margin-top: 5%;
+	font-size: 17px;
+	width: 70%;
+	color: black;
+	background-color: #ae8c57;
+	padding: 50px;
+}
+
+.img-about-us {
+	width: 50%;
+	height: 30%;
+	margin-top: 5%;
+}
+
+.quote {
+	float: left;
+	font-size: 40px;
+	width: 70%;
+	margin-left: 15%;
+	text-align: center;
+	margin-top: 8%;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: bold;
+	color: #a68216;
+}
+
+.gallery-section {
+	margin-top: 5%;
+	margin-left: 9%;
+	width: 95%;
+	height: auto;
+	float: left;
+}
+
+.gallery-img-masseuses {
+	width: 21%;
+	height: 300px;
+	margin-right: 1%;
+	display: inline-block;
+	transition: opacity 0.2s;
+}
+
+.gallery-img-masseuses:hover {
+	opacity: 0.7;
+}
+
+.gallery-img:hover {
+	opacity: 0.7;
+}
+
+/* CJENIK */
+
+.priceList-section {
+	float: left;
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+	background-color: white;
+	margin-bottom: 5%;
+	margin-top: 6%;
+}
+
+.price-lotos {
+	position: absolute;
+	top: 8px;
+	left: 2px;
+	width: 62px;
+	height: 40px;
+}
+
+.header-section-h {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	font-weight: 300;
+	color: white;
+}
+
+.header-description {
+	width: 100%;
+	position: relative;
+	margin-bottom: 0px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/thaiMassage.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 40vh;		
+}
+
+#massage {
+	background-color: #6b5634;
+	height: 250px;
+	position: relative;
+}
+
+#massage-gray {
+	background-color: #82683f;
+	height: 250px;
+	position: relative;
+}
+
+.massage-description {
+	float: left;
+	width: 40%;
+	height: 75%;
+	margin-left: 5%;
+	padding: 20px;
+	border-bottom: 1px solid #c4c4c4;
+	color: white;
+}
+
+.massage-h {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.massage-h span {
+	font-size: 15px;
+}
+
+.minutes-space {
+	float: right;
+	height: 80%;
+	width: 130px;
+	margin-right: 5%;
+	margin-top: 20px;
+}
+
+.minutes1, .minutes2, .minutes3, .minutes30 {
+	border: 1.5px solid #493a23;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	color: white;
+	line-height: 40px;
+	font-weight: bold;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	transition: 0.3s;
+	display: inline-block;
+
+}
+
+
+.minutes1:hover {
+	background-color: #493a23;
+	border: 1.5px solid #493a23; 
+	color: white;
+	transition: 0.3s;
+}
+
+.minutes2:hover {
+	background-color: #493a23;
+	border: 1.5px solid #493a23; 
+	color: white;
+	transition: 0.3s;
+}
+
+.minutes3:hover {
+	background-color: #493a23;
+	border: 1.5px solid #493a23; 
+	color: white;
+	transition: 0.3s;
+}
+
+.minutes30:hover {
+	background-color: #493a23;
+	border: 1.5px solid #493a23; 
+	color: white;
+	transition: 0.3s;
+}
+
+.price {
+	display: inline-block;
+	margin-left: 6px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	background-color: #493a23;
+	padding: 10px;
+}
+
+.select-min {
+	display: inline-block;
+	float: right;
+	margin-top: 2%;
+	margin-right: : 2%;
+	font-size: 16px;
+	color: white;
+	width: 200px;
+}
+
+.select-sauna {
+	display: block;
+	position: absolute;
+	bottom: 10%;
+	right: 2%;
+	font-size: 16px;
+	color: white;
+	width: 200px;
+}
+
+/* KONTAKT */
+
+.contact-section {
+	float: left;
+	width: 90%;
+	height: 1300px;
+	margin-left: 5%;
+	background-color: #b99c6e;
+	margin-bottom: 5%;
+	margin-top: 5.8%;
+}
+
+.where-we-are {
+	float: left;
+	width: 20%;
+	margin-left: 5%;
+	margin-top: 15%;
+	font-size: 65px;
+	font-weight: bold
+}
+
+.map-space {
+	float: right;
+	margin-top: 5%;
+	height: 500px;
+	width: 60%;
+	margin-right: 5%;
+}
+
+.question {
+	float: left;
+	margin-top: 20%;
+	margin-left: 5%;
+	font-size: 70px;
+	font-weight: bold;
+	width: 20%;
+}
+
+.adress {
+	margin-left: 15%;
+	margin-top: 6%;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.location {
+	float: left;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+
+.form-section {
+	float: right;
+	margin-top: 10%;
+	height: 500px;
+	width: 50%;
+	margin-right: 5%;
+	
+}
+
+.contact-txt {
+	width: 100%;
+	height: 60px;
+	margin-bottom: 10px;
+	background-color: #f5f2f2;
+	padding-left: 10px;
+	border: 1px solid #d9d7d7;
+}
+
+.message {
+	width: 99%;
+	height: 200px;
+	background-color: #f5f2f2;
+	padding: 10px;
+	border: 1px solid #d9d7d7;
+}
+
+.contact-us {
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+}
+
+.contact-button {
+	width: 102%;
+	height: 60px;
+	background-color: #c44949;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	line-height: 60px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.contact-button:hover {
+	background-color: #7d272b;
+	transition: 0.2s;
+}
+
+/* THAI MASAŽA */ 
+
+.thai-massage-section{
+	width: 90%;
+	height: 1550px;
+	margin-left: 5%;
+	margin-top: 5.9%;
+	background-color: #b99c6e;
+}
+
+.thai-massage-img {
+	float: right;
+	width: 30%;
+	height: 300px;
+	margin-right: 5%;
+	margin-top: 3%;
+}
+
+.history {
+	font-size: 45px;
+	margin-left: 9.8%;
+	margin-top: 8%;
+	float: left;
+	color: #333232;
+	width: 77%;
+	font-weight: 300;
+	padding-bottom: 20px;
+}
+
+/* Priprema za masažu */
+
+.thai-massage-section{
+	width: 90%;
+	height: 1550px;
+	margin-left: 5%;
+	margin-top: 5.9%;
+	background-color: #b99c6e;
+}
+
+
+
+/* 	PONUDA */ 
+
+.offer-section{
+	width: 90%;
+	height: 1700px;
+	margin-left: 5%;
+	margin-top: 5.8%;
+	background-color: #b99c6e;
+}
+
+.offer-box {
+	width: 70%;
+	height: 60px;
+	margin-left: 10%;
+	margin-top: 3%;
+	float: left;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 10px; 
+	cursor: pointer;
+}
+
+.lotus {
+	float: left;
+	margin-left: 2%;
+	width: 50px;
+	height: 30px;
+	line-height: 95px;
+}
+
+.offer-h {
+	margin-left: 8%;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 80px;
+	transition: margin-left 0.2s;
+}
+
+.offer-h:hover {
+	margin-left: 10%;
+}
+
+/* MASERKE */
+
+.masseuses-section{
+	width: 90%;
+	height: 2000px;
+	margin-left: 5%;
+	margin-top: 5.8%;
+	background-color: #b99c6e;
+}
+
+.masseuses {
+	width: 78%;
+	height: 440px;
+	float: left;
+	margin-left: 10%;
+	margin-top: 3%;
+	padding-bottom: 30px;
+	border-bottom: 1px solid black;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.masseuses2 {
+	width: 78%;
+	height: 470px;
+	float: left;
+	margin-left: 10%;
+	margin-top: 3%;
+	padding-bottom: 30px;
+	border-bottom: 1px solid black;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	margin-bottom: 5%;
+}
+
+.masseuses-img {
+	width: 250px;
+	height: auto;
+	margin-top: 6%;
+	margin-left: 5%;
+}
+
+.masseuses-txt {
+	float: right;
+	margin-right: 8%;
+	height: 70%;
+	width: 60%;
+	margin-top: 5%;
+	color: #333232;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+
+/* GALERIJA SLIKA */ 
+
+.gallery-section-big {
+    width: 90%;
+	height: 4500px;
+	margin-left: 5%;
+	margin-top: 5.8%;
+	background-color: #b99c6e;
+}
+
+.gallery_section {
+	float: left;
+	width: 100%;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.image {
+	float: left;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 30px;
+	height: 300px;
+	width: 350px;
+	background-color: black;
+	position: relative;
+	transition: 0.3s;
+}
+
+.image:hover {
+	opacity: 0.5;
+	transition: 0.3s;
+}

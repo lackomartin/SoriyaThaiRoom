@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soriya Thai Room | Salon za Thai masaže</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Službena web stranica salona za tradicionalnu tajlandsku masažu u Zagrebu">
+	<meta name="author" content="Martin Lacko">
+
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="mobile.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Music -->
+	<iframe width="0" height="0" src="https://www.youtube.com/embed/x7K6UpzwwOc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</head>
+<body class="bgcolor">
+	<img src="img/flower.png" class="lotos-logo">
+
+	<!--responsive menu -->
+    <div class="hamburger-menu">
+      <div class="bar"></div>  
+    </div>    
+            
+    <script>
+    (function () {
+      $('.hamburger-menu').on('click', function() {
+      $('.bar').toggleClass('animate');
+      var mobileNav = $('.mobile-nav');
+      mobileNav.toggleClass('hide show');
+    })
+    })();    
+    </script>
+        
+        
+    <div class="mobile-nav hide">
+    <ul>
+      <div class="li"><a href="index.html">početna</a></div>
+      <div class="li"><a href="onama.html">o nama</a></div>
+      <div class="li"><a href="osoblje.html">naše osoblje</a></div>
+      <div class="li"><a href="thai.html">thai masaža</a></div>
+      <div class="li"><a href="priprema.html">priprema za masažu</a></div>
+      <div class="li"><a href="ponuda.html">ponuda</a></div>
+      <div class="li"><a href="cjenik.html">cjenik</a></div>
+      <div class="li"><a href="rezervacije.html">rezervacije</a></div>
+      <div class="li"><a href="poklon-bon.html">poklon bon</a></div>
+      <div class="li"><a href="galerija.html">galerija</a></div>
+      <div class="li"><a href="kontakt.html">kontakt</a></div>
+    </ul>
+   </div> 
+   <!--end of responsive menu -->
+
+	<div class="menu-section">
+		<a href="index.html"><li>Početna</li></a>
+		<div class="dropdown">
+			  <a href="onama.html"><li>O nama &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="osoblje.html"><p class="li-dropdown">Naše osoblje</p></a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a href="thai.html"><li>Thai masaža &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="priprema.html"><p class="li-dropdown">Priprema za masažu</p></a>
+			  </div>
+			</div>
+		<a href="ponuda.html"><li>Ponuda</li></a>
+		<a href="cjenik.html"><li>Cjenik</li></a>
+		<div class="dropdown">
+			  <a href="rezervacije.html"><li>Rezervacije &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="poklon-bon.html"><p class="li-dropdown">Poklon bon</p></a>
+			  </div>
+			</div>
+		<a href="galerija.html"><li>Galerija</li></a>
+		<a href="kontakt.html"><li>Kontakt</li></a>
+	</div>
+
+	<div class="reservation-section-light">
+
+	<img src="img/poklonBon.png" style="margin-top: 15%;
+	margin-left: 5%;
+	width: 80px;
+	height: 60px;" >
+	<h3 data-aos="fade-up" data-aos-duration="1000">Poklon bon</h3>
+	<p class="reservation-text" data-aos="fade-up" data-aos-duration="1500">Iznenadite svoje bližnje, prijatelje i Vama drage osobe kupnjom poklon bona u Soriya Thai Room salonu za tajlandske masaže. <br><br> Sve što trebate je ispuniti obrazac sa podacima i zatim uplatiti punu cijenu masaže koju poklanjate (cijene provjeriti u cjeniku). Nakon uplate na Vaš e-mail i na e-mail primatelja (ukoliko je naveden), stiže poklon bon koji možete isprintati i iskoristiti u Soriya Thai Room salonu. <br><br> <b>PODACI ZA PLAĆANJE:</b> <br><br> IBAN: HR6923400091111018169, model: 00, poziv na broj: datum masaže, svrha plaćanja/opis plaćanja: ime i prezime klijenta <br><br> <i>Sve cijene su izražene s uključenim PDV-om.</i></p>
+
+	<div class="reservation-section">
+		<div class="reservation">
+			<form method="post" accept-charset="utf-8" action="poklon-bon.php">
+				<p class="txt">Vrsta masaže:</p>
+				<select name="vrsta_masaze" id="vrsta_masaze" required>
+					<option id="0" value="Tradicionalna tajlandska masaža">Tradicionalna tajlandska masaža</option>
+					<option id="1" value="Tradicionalna tajlandska masaža u paru">Tradicionalna tajlandska masaža u paru</option>
+					<option id="2" value="Uljna masaža, piling tijela i aromaterapija-masaža odabranim tajlandskim i hrvatskim uljima">Uljna masaža, piling tijela i aromaterapija-masaža odabranim tajlandskim i hrvatskim uljima</option>
+					<option id="3" value="Tajlandska masaža vrućim biljnim kompresama">Tajlandska masaža vrućim biljnim kompresama</option>
+					<option id="4" value="Masaža glave, lica, vrata, ramena i leđa">Masaža glave, lica, vrata, ramena i leđa</option>
+					<option id="5" value="Masaža stopala - refleksologija">Masaža stopala - refleksologija</option>
+					<option id="6" value="Hot-stone masaža (masaža vrućim vulkanskim kamenjem)">Hot-stone masaža (masaža vrućim vulkanskim kamenjem)</option>
+					<option id="7" value="Masaža za mršavljenje">Masaža za mršavljenje</option>
+					<option id="8" value="Masaža za seniore">Masaža za seniore</option>
+					<option id="9" value="Masaža za atlete">Masaža za atlete</option>
+				</select>
+			
+				<br>
+
+				<p class="txt">Korištenje saune nakon masaže(15min):</p>
+				
+				<select name="sauna" required>
+					<option id="DA">DA</option>
+					<option id="NE" selected>NE</option>
+
+				</select>
+
+				<br>
+
+				<p class="txt">Trajanje masaže(min):</p>
+				
+				<select name="trajanje_masaze" id="trajanje_masaze" required>
+					<option id="60" value="60">60</option>
+					<option id="90" value="90">90</option>
+					<option id="120" value="120">120</option>
+				</select>
+				<script type="text/javascript">
+					$(document).ready(function () {
+					    $("#vrsta_masaze").change(function () {
+					        var val = $(this).val();
+					        if (val == "Tradicionalna tajlandska masaža") {
+					            $("#trajanje_masaze").html("<option value='60'>60</option><option value='90'>90</option><option value='120'>120</option>");
+					        } else if (val == "Tradicionalna tajlandska masaža u paru") {
+					            $("#trajanje_masaze").html("<option value='60'>60</option><option value='90'>90</option><option value='120'>120</option>");
+					        } else if (val == "Uljna masaža, piling tijela i aromaterapija-masaža odabranim tajlandskim i hrvatskim uljima") {
+					            $("#trajanje_masaze").html("<option value='60'>60</option><option value='90'>90</option><option value='120'>120</option>");
+					        }
+					          else if (val == "Tajlandska masaža vrućim biljnim kompresama") {
+					            $("#trajanje_masaze").html("<option value='60'>60</option><option value='90'>90</option><option value='120'>120</option>");
+					        } else if (val == "Masaža glave, lica, vrata, ramena i leđa") {
+					            $("#trajanje_masaze").html("<option value='60'>60</option><option value='90'>90</option><option value='120'>120</option>");
+					        } else if (val == "Masaža stopala - refleksologija") {
+					            $("#trajanje_masaze").html("<option value='30'>30</option><option value='60'>60</option>");
+					        } else if (val == "Hot-stone masaža (masaža vrućim vulkanskim kamenjem)") {
+					            $("#trajanje_masaze").html("<option value='90'>90</option>");
+					        } else if (val == "Masaža za mršavljenje") {
+					            $("#trajanje_masaze").html("<option value='60'>60</option><option value='90'>90</option>");
+					        } else if (val == "Masaža za seniore") {
+					            $("#trajanje_masaze").html("<option value='60'>60</option><option value='90'>90</option>");
+					        } else if (val == "Masaža za atlete") {
+					            $("#trajanje_masaze").html("<option value='60'>60</option><option value='90'>90</option><option value='120'>120</option>");
+					        }
+
+					    });
+					});
+				</script>
+
+				<br>
+
+				<p class="txt">Vaše Ime i prezime:</p>
+				<input type="text" name="ime" class="input" required>
+
+				<br>
+
+				<p class="txt">Vaš Email:</p>
+				<input type="email" name="email" class="input" required> 
+
+				<br>
+
+				<p class="txt">Ime i prezime osobe kojoj poklanjate bon:</p>
+				<input type="text" name="ime2" class="input" required>
+
+				<br>
+
+				<p class="txt">Email osobe kojoj poklanjate bon (neobavezno):</p>
+				<input type="email" name="email2" class="input"> 
+
+				<br>
+
+				<input type="submit" name="Potvrdi" value="ZATRAŽITE PONUDU" class="reservation-button" onclick="swal('Hvala na rezervaciji!', 'Uskoro ćete dobiti potvrdu termina.', 'Ok');">
+
+			</div>
+
+		</form>
+	</div>
+
+	</div>
+
+	<footer>
+		<img src="img/flower.png" class="flower">
+		<p class="copyright"></p>
+		<script>
+			const d = new Date();
+			const year = d.getFullYear();
+
+			const copyright = `Soriya Thai Room &copy; Copyright ${year}`;
+			document.querySelector('.copyright').innerHTML = copyright;
+		</script>
+		<!-- Music-->
+		<iframe width="0" height="0" src="https://www.youtube.com/embed/x7K6UpzwwOc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</footer>
+
+	<script src="js/reservation.js"></script>
+
+	<!-- initialize AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+
+</body>
+</html>	

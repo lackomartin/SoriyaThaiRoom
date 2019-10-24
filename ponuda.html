@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soriya Thai Room | Salon za Thai masaže</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Službena web stranica salona za tradicionalnu tajlandsku masažu u Zagrebu">
+	<meta name="author" content="Martin Lacko">
+
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mobile.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<img src="img/flower.png" class="lotos-logo">
+
+	<!--responsive menu -->
+    <div class="hamburger-menu">
+      <div class="bar"></div>  
+    </div>    
+            
+    <script>
+    (function () {
+      $('.hamburger-menu').on('click', function() {
+      $('.bar').toggleClass('animate');
+      var mobileNav = $('.mobile-nav');
+      mobileNav.toggleClass('hide show');
+    })
+    })();    
+    </script>
+        
+        
+    <div class="mobile-nav hide">
+    <ul>
+      <div class="li"><a href="index.html">početna</a></div>
+      <div class="li"><a href="onama.html">o nama</a></div>
+      <div class="li"><a href="osoblje.html">naše osoblje</a></div>
+      <div class="li"><a href="thai.html">thai masaža</a></div>
+      <div class="li"><a href="priprema.html">priprema za masažu</a></div>
+      <div class="li"><a href="ponuda.html">ponuda</a></div>
+      <div class="li"><a href="cjenik.html">cjenik</a></div>
+      <div class="li"><a href="rezervacije.html">rezervacije</a></div>
+      <div class="li"><a href="galerija.html">galerija</a></div>
+      <div class="li"><a href="kontakt.html">kontakt</a></div>
+    </ul>
+   </div>       
+   <!--end of responsive menu -->
+
+	<div class="menu-section">
+		<a href="index.html"><li>Početna</li></a>
+			<div class="dropdown">
+			  <a href="onama.html"><li>O nama &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="osoblje.html"><p class="li-dropdown">Naše osoblje</p></a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a href="thai.html"><li>Thai masaža &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="priprema.html"><p class="li-dropdown">Priprema za masažu</p></a>
+			  </div>
+			</div>
+		<a href="ponuda.html"><li id="li-selected">Ponuda</li></a>
+		<a href="cjenik.html"><li>Cjenik</li></a>
+		<a href="rezervacije.html"><li>Rezervacije</li></a>
+		<a href="galerija.html"><li>Galerija</li></a>
+		<a href="kontakt.html"><li>Kontakt</li></a>
+	</div>
+
+	<div class="offer-section">
+		<h6>Ponuda masaža</h6> 
+		
+			<a href="tradicionalna.html"><div class="offer-box">
+				<div class="lotus"><img src="img/flower.png" width="100%" height="100%"></div><p class="offer-h">Tradicionalna tajlandska masaža</p>
+			</div></a>
+
+			<a href="tradicionalna-u-paru.html"><div class="offer-box">
+				<div class="lotus"><img src="img/flower.png" width="100%" height="100%"></div><p class="offer-h">Tradicionalna tajlandska masaža u paru</p>
+			</div></a>
+
+			<a href="relaksirajuća.html"><div class="offer-box">
+				<div class="lotus"><img src="img/flower.png" width="100%" height="100%"></div><p class="offer-h">Uljna masaža, piling tijela i aromaterapija-masaža odabranim tajlandskim i hrvatskim uljima</p>
+			</div></a>
+
+			<a href="tajlandska.html"><div class="offer-box">
+				<div class="lotus"><img src="img/flower.png" width="100%" height="100%"></div><p class="offer-h">Tajlandska masaža vrućim biljnim kompresama</p>
+			</div></a>
+
+			<a href="masaža-leđa.html"><div class="offer-box">
+				<div class="lotus"><img src="img/flower.png" width="100%" height="100%"></div><p class="offer-h">Masaža glave, lica, vrata, ramena i leđa</p>
+			</div></a>
+
+			<a href="refleksologija.html"><div class="offer-box">
+				<div class="lotus"><img src="img/flower.png" width="100%" height="100%"></div><p class="offer-h">Masaža stopala - refleksologija</p>
+			</div></a>
+
+			<a href="hot-stone.html"><div class="offer-box">
+				<div class="lotus"><img src="img/flower.png" width="100%" height="100%"></div><p class="offer-h">Hot-stone masaža (masaža vrućim vulkanskim kamenjem)</p>
+			</div></a>
+
+			<a href="masaža-za-mršavljenje.html"><div class="offer-box">
+				<div class="lotus"><img src="img/flower.png" width="100%" height="100%"></div><p class="offer-h">Masaža za mršavljenje</p>
+			</div></a>
+
+			<a href="masaža-za-seniore.html"><div class="offer-box">
+				<div class="lotus"><img src="img/flower.png" width="100%" height="100%"></div><p class="offer-h">Masaža za seniore</p>
+			</div></a>
+
+			<a href="masaža-za-atlete.html"><div class="offer-box">
+				<div class="lotus"><img src="img/flower.png" width="100%" height="100%"></div><p class="offer-h">Masaža za atlete</p>
+			</div></a>
+
+	</div>
+
+	<footer> <!--style="background-color: #f5f5f5;"-->
+		<img src="img/flower.png" class="flower">
+		<p class="copyright"></p>
+		<script>
+			const d = new Date();
+			const year = d.getFullYear();
+
+			const copyright = `Soriya Thai Room &copy; Copyright ${year}`;
+			document.querySelector('.copyright').innerHTML = copyright;
+			/*document.querySelector('.copyright').style.color = 'black';*/
+		</script>
+		<!-- Music -->
+		<iframe width="0" height="0" src="https://www.youtube.com/embed/x7K6UpzwwOc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</footer>
+
+	<!-- initialize AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+
+</body>
+
+</html>

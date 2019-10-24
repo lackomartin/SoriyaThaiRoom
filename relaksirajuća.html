@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soriya Thai Room | Salon za Thai masaže</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Službena web stranica salona za tradicionalnu tajlandsku masažu u Zagrebu">
+	<meta name="author" content="Martin Lacko">
+
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mobile.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<img src="img/flower.png" class="lotos-logo">
+
+	<!--responsive menu -->
+    <div class="hamburger-menu">
+      <div class="bar"></div>  
+    </div>    
+            
+    <script>
+    (function () {
+      $('.hamburger-menu').on('click', function() {
+      $('.bar').toggleClass('animate');
+      var mobileNav = $('.mobile-nav');
+      mobileNav.toggleClass('hide show');
+    })
+    })();    
+    </script>
+        
+        
+    <div class="mobile-nav hide">
+    <ul>
+      <div class="li"><a href="index.html">početna</a></div>
+      <div class="li"><a href="onama.html">o nama</a></div>
+      <div class="li"><a href="osoblje.html">naše osoblje</a></div>
+      <div class="li"><a href="thai.html">thai masaža</a></div>
+      <div class="li"><a href="priprema.html">priprema za masažu</a></div>
+      <div class="li"><a href="cjenik.html">cjenik</a></div>
+      <div class="li"><a href="rezervacije.html">rezervacije</a></div>
+      <div class="li"><a href="galerija.html">galerija</a></div>
+      <div class="li"><a href="kontakt.html">kontakt</a></div>
+    </ul>
+   </div>       
+   <!--end of responsive menu -->
+
+	<div class="menu-section">
+		<a href="index.html"><li>Početna</li></a>
+		<div class="dropdown">
+			  <a href="onama.html"><li>O nama &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="osoblje.html"><p class="li-dropdown">Naše osoblje</p></a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a href="thai.html"><li>Thai masaža &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="priprema.html"><p class="li-dropdown">Priprema za masažu</p></a>
+			  </div>
+			</div>
+			<a href="ponuda.html"><li id="li-selected">Ponuda</li></a>
+		<a href="cjenik.html"><li>Cjenik</li></a>
+		<a href="rezervacije.html"><li>Rezervacije</li></a>
+		<a href="galerija.html"><li>Galerija</li></a>
+		<a href="kontakt.html"><li>Kontakt</li></a>
+	</div>
+
+	<div class="thai-massage-section">
+		<h6>Uljna masaža, piling tijela i aromaterapija-masaže odabranim tajlandskim i hrvatskim uljima</h6>
+
+		<p class="about-txt" data-aos="fade-in" data-aos-duration="1500">
+			Opuštajuća tajlandska masaža provodi se uz pomoć aromatičnih ulja; ekstrakata jasmina, bijele magnolije, kokosovog, mliječnog ulja i drugih, odabranih ulja. To je kombinacija akupresurnih tehnika i ayurvedske filozofije masaže. Cilj joj je poboljšati imunološki i živčani sustav i ubrzati izlučivanje viška vode iz tijela stimulirajući pore na koži. Utječe na uklanjanje toksina, povećava čvrstoću kože i unosi osjećaj duboke opuštenosti. <br><br>
+
+			Pilingom odstranjujemo sloj odumrlih, nataloženih stanica kože. Tim postupkom potičemo regeneraciju kože, poboljšavamo njenu mikrocirkulaciju i omogućujemo joj bolju apsorpciju tajlandskih eteričnih ulja; limunske trave, jasmina, kokosa, yang-ylanga te drugih ulja hrvatskih biljaka; lavande i smilja, koja kristimo tijekom masaže. <br><br>
+
+			Masaža se izvodi na madracu srednje tvrdoće a masirana osoba ostaje u donjem rublju. Uz pomoć tijela, ruku, prstiju, laktova i podlaktica, maserka koristi razne tehnike kompresije i istezanja, osiguravajući da dodir opusti umorno tijelo. Masažna ulja koja koristimo trebala bi se u potpunosti upiti do kraja masaže, tako da nema straha od zaprljanja odjeće. Zbog vrijednih učinaka ulja, preporučujemo da nekoliko sati nakon masaže ne perete kožu. <br><br>
+
+			Tajlandska masaža aromatičnim uljima preporučuje se osobama koje vode vrlo aktivan stil života, koji očekuju da masaža oslobodi tijelo i um od stresa dok vode brigu o koži. Također se preporučuje osobama za koje je tradicionalna tajlandska masaža preintenzivna ili je zbog zdravstvenih razloga istu nemoguće izvesti.<br><br>
+
+			Najvažnije prednosti ovih masaža su: <br><br>
+			ulazak u stanje duboke opuštenosti, <br>
+			podržavanje liječenja depresivnih stanja,<br>
+			poboljšanje krvožilnog i limfnog sustava, <br>
+			uklanjanje toksina iz tijela,<br>
+			zdrava njega kože.<br><br>
+
+			<b>Uz odabranu masažu moguće je i korištenje saune u trajanju od 15 min. Opustite se uz mirise eteričnih ulja.</b><br><br>
+
+			<b>Cjenik:</b> <br><br>
+			&nbsp;&nbsp;60min: 280 HRK <br>
+			&nbsp;&nbsp;90min: 380 HRK  <br>
+			120min: 450 HRK <br><br>
+
+			<b>Cjenik saune:</b><br><br>
+			15 min:  50 HRK<br>
+		</p>
+
+		<img src="img/aromaterapija.jpg" class="thai-massage-img">
+
+	</div>
+
+	<footer>
+		<img src="img/flower.png" class="flower">
+		<p class="copyright"></p>
+		<script>
+			const d = new Date();
+			const year = d.getFullYear();
+
+			const copyright = `Soriya Thai Room &copy; Copyright ${year}`;
+			document.querySelector('.copyright').innerHTML = copyright;
+		</script>
+		<!-- Music -->
+		<iframe width="0" height="0" src="https://www.youtube.com/embed/x7K6UpzwwOc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</footer>
+
+	<!-- initialize AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+
+</body>
+
+</html>

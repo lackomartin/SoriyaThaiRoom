@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soriya Thai Room | Salon za Thai masaže</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Službena web stranica salona za tradicionalnu tajlandsku masažu u Zagrebu">
+	<meta name="author" content="Martin Lacko">
+
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mobile.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<img src="img/flower.png" class="lotos-logo">
+
+	<!--responsive menu -->
+    <div class="hamburger-menu">
+      <div class="bar"></div>  
+    </div>    
+            
+    <script>
+    (function () {
+      $('.hamburger-menu').on('click', function() {
+      $('.bar').toggleClass('animate');
+      var mobileNav = $('.mobile-nav');
+      mobileNav.toggleClass('hide show');
+    })
+    })();    
+    </script>
+        
+        
+    <div class="mobile-nav hide">
+    <ul>
+      <div class="li"><a href="index.html">početna</a></div>
+      <div class="li"><a href="onama.html">o nama</a></div>
+      <div class="li"><a href="osoblje.html">naše osoblje</a></div>
+      <div class="li"><a href="thai.html">thai masaža</a></div>
+      <div class="li"><a href="priprema.html">priprema za masažu</a></div>
+      <div class="li"><a href="ponuda.html">ponuda</a></div>
+      <div class="li"><a href="cjenik.html">cjenik</a></div>
+      <div class="li"><a href="rezervacije.html">rezervacije</a></div>
+      <div class="li"><a href="galerija.html">galerija</a></div>
+      <div class="li"><a href="kontakt.html">kontakt</a></div>
+    </ul>
+   </div>       
+   <!--end of responsive menu -->
+
+	<div class="menu-section">
+		<a href="index.html"><li>Početna</li></a>
+		<div class="dropdown">
+			  <a href="onama.html"><li>O nama &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="osoblje.html"><p class="li-dropdown">Naše osoblje</p></a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a href="thai.html"><li id="li-selected">Thai masaža &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="priprema.html"><p class="li-dropdown">Priprema za masažu</p></a>
+			  </div>
+			</div>
+		<a href="ponuda.html"><li>Ponuda</li></a>
+		<a href="cjenik.html"><li>Cjenik</li></a>
+		<a href="rezervacije.html"><li>Rezervacije</li></a>
+		<a href="galerija.html"><li>Galerija</li></a>
+		<a href="kontakt.html"><li>Kontakt</li></a>
+	</div>
+
+	<div class="thai-massage-section">
+		<h6>Thai masaža</h6>
+
+		<p class="about-txt" data-aos="fade-in" data-aos-duration="1500">
+			Thai ili tajlandska masaža predstavlja oblik istočnjačke tjelesne terapije, koja uključuje rad s energetskim poljima koja okružuju te prožimaju tijelo. Počeci thai masaže pojavljuju se pred oko 2500 godina. Tajlandska masaža istovremeno opušta i daje energiju. Maserke koriste noge, koljena, ruke i stopala kako bi “manipulirali” tijelom i doveli ga do sklada. Prednosti tajlandske masaže su brojne: otklanja psihički i fizički stres, opušta tijelo, ublažava tegobe s mišićima uzrokovane povećanim fizičkim naporima. Ova masaža pozitivno utječe i na kronične bolove, balansira rad cijeloga tijela, te pomaže u borbi protiv celulita. <br><br>
+
+			Drevna znanja tradicionalne tajlandske masaže sakupljana su već od prvog liječnika Buddhe, te njegovih sljedbenika i prijatelja, a ista su se kroz dugi razvoj dopunjavala znanjem Ayurvede, Joge, Akupresure, Kiropraktike, Shiatshu masaže, prastarih civilizacija Indije, Kine i Japana. Pozitivne učinke opuštanja mišića, tetiva, razgibavanje zglobova, gipkost tijela, aktiviranje živčanog i probavnog sustava, dodatno upotpunjuju masaže sa eteričnim uljima tajlandskog i hrvatskog bilja, voća i cvijeća.
+		</p>
+
+		<img src="img/aboutUs.jpg" class="thai-massage-img">
+
+		<p class="history">Povijest Thai masaže</p>
+
+		<p class="about-txt" data-aos="fade-in" data-aos-duration="1500">
+			Kao rezultat brojnih povijesnih događaja i destruktivne klime, do danas je preživjelo svega nekoliko povijesnih izvora. Štoviše, u mnogim regijama zemlje znanje se prenosilo usmenom predajom, a metode pojedinačnih vježbi ostale su obiteljska tajna čuvana generacijama. Trenutno su jedini izvor informacija o "tehničkim" temeljima kamene ploče s početka 19. stoljeća, koje prikazuju energetski sustav i akupresurne točke, te jedina preživjela skulptura iz istog razdoblja, koja prikazuje jedan od predmeta za masažu. <br><br>
+
+			Istraživanja posljednjih godina omogućila su utvrđivanje najmanje pet različitih utjecaja na trenutni oblik tajlandske masaže: <br><br>
+
+			<b>Budizam</b> - budistički medicinski tekstovi datirani nekoliko stoljeća prije Krista sadrže brojne podatke o anatomiji, vrstama bolesti i njihovom liječenju. Oni također ukazuju na značajnu ulogu prvog, osobnog Budinog liječnika i tvorca tajlandske masaže, Jivak Komarabhacca. Današnji spa terapeuti tajlandske masaže koriste elemente budističke tradicije kao što su etika, samilost i tehnike disanja. <br><br>
+
+			<b>Ayurveda</b> - sustav indijske prirodne medicine. Studenti prirodne medicine još uvijek koriste udžbenike napisane u sedmom stoljeću prije Krista.<br><br> 
+
+			<b>Joga</b> - disciplina samopoboljšanja, meditacije i asketizma uspostavljena je u Indiji. Sličan sustav individualnih stavova i vježbi istezanja razvijen je i na Tajlandu. Mogu se uočiti sličnosti položaja tijela, nekih imena ili energetskih kanala. <br><br>
+
+			<b>Kultura Kine i drugih susjednih zemalja</b> - kao rezultat stalnog kontakta i kulturne razmjene, tajlandski maseri razvili su vlastite tehnike refleksoterapije ili trbušne masaže. <br><br>
+
+			<b>Regionalne prakse tajlandskih liječnika</b> imale su najveći utjecaj na ukupni oblik tajlandske medicine. Tehnike postavljanja kostiju (izvorni kiropraktik), hodanje po leđima (yam kaeng) ili udaranje specifičnih točaka po tijelu drvenim čekićem (tok sen).
+		</p>
+
+	</div>
+
+	<footer>
+		<img src="img/flower.png" class="flower">
+		<p class="copyright"></p>
+		<script>
+			const d = new Date();
+			const year = d.getFullYear();
+
+			const copyright = `Soriya Thai Room &copy; Copyright ${year}`;
+			document.querySelector('.copyright').innerHTML = copyright;
+		</script>
+		<!-- Music-->
+		<iframe width="0" height="0" src="https://www.youtube.com/embed/x7K6UpzwwOc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</footer>
+
+	<!-- initialize AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+
+</body>
+
+</html>

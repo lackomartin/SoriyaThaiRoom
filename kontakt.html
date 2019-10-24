@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soriya Thai Room | Salon za Thai masaže</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Službena web stranica salona za tradicionalnu tajlandsku masažu u Zagrebu">
+	<meta name="author" content="Martin Lacko">
+
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="mobile.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<img src="img/flower.png" class="lotos-logo">
+	
+	<!--responsive menu -->
+    <div class="hamburger-menu">
+      <div class="bar"></div>  
+    </div>    
+            
+    <script>
+    (function () {
+      $('.hamburger-menu').on('click', function() {
+      $('.bar').toggleClass('animate');
+      var mobileNav = $('.mobile-nav');
+      mobileNav.toggleClass('hide show');
+    })
+    })();    
+    </script>
+        
+        
+    <div class="mobile-nav hide">
+    <ul>
+      <div class="li"><a href="index.html">početna</a></div>
+      <div class="li"><a href="onama.html">o nama</a></div>
+      <div class="li"><a href="osoblje.html">naše osoblje</a></div>
+      <div class="li"><a href="thai.html">thai masaža</a></div>
+      <div class="li"><a href="priprema.html">priprema za masažu</a></div>
+      <div class="li"><a href="ponuda.html">ponuda</a></div>
+      <div class="li"><a href="cjenik.html">cjenik</a></div>
+      <div class="li"><a href="rezervacije.html">rezervacije</a></div>
+      <div class="li"><a href="galerija.html">galerija</a></div>
+      <div class="li"><a href="kontakt.html">kontakt</a></div>
+    </ul>
+   </div>        
+   <!--end of responsive menu -->
+
+	<div class="menu-section">
+		<a href="index.html"><li>Početna</li></a>
+		<div class="dropdown">
+			  <a href="onama.html"><li>O nama &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="osoblje.html"><p class="li-dropdown">Naše osoblje</p></a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a href="thai.html"><li>Thai masaža &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="priprema.html"><p class="li-dropdown">Priprema za masažu</p></a>
+			  </div>
+			</div>
+		<a href="ponuda.html"><li>Ponuda</li></a>
+		<a href="cjenik.html"><li>Cjenik</li></a>
+		<a href="rezervacije.html"><li>Rezervacije</li></a>
+		<a href="galerija.html"><li>Galerija</li></a>
+		<a href="kontakt.html"><li id="li-selected">Kontakt</li></a>
+	</div>
+
+	<div class="contact-section">
+		<div class="where-we-are">
+			Gdje se nalazimo?
+			<img src="img/location.png" class="location">
+			<p class="adress">Lukšić 10 B, 10000 Zagreb <br><br> Radno vrijeme: PON-SUB 11:00-22:00 <br><br>Mobitel: 098 357 997 <br><br>E-mail: info@soriya-thai-room.hr 
+			<br><br><b>PODACI O TVRTKI</b><br><br>
+			<span style="font-weight: 100">Vivat Forma j.d.o.o.<br>
+			OIB: 05443309193<br>
+			MB: 05108594</span></p>
+		</div>
+		<div class="map-space" data-aos="fade-left" data-aos-duration="800">
+			<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJFV7rPLDQZUcRIk2m6k9qsIE&key=AIzaSyAWrFQ4funTBif9D-24ij_6S11bBTJ-2ig" allowfullscreen></iframe>
+		</div>
+
+		<p class="question">Imate li pitanje?</p>
+		<div class="form-section" data-aos="fade-left" data-aos-duration="1000">
+			<form method="post" accept-charset="utf-8" action="kontakt.php">
+				<p class="contact-us" >Kontaktirajte nas!</p>
+				<input type="text" name="name" class="contact-txt" placeholder="Ime">
+				<input type="text" name="lastname" class="contact-txt" placeholder="Prezime">
+				<input type="email" name="email" class="contact-txt" placeholder="Email">
+				<textarea rows="4" cols="50" class="message" placeholder="Upišite poruku..."></textarea>
+				<input type="submit" value="POŠALJI" class="contact-button">
+			</form>
+		</div>
+
+	</div>
+
+	<footer>
+		<img src="img/flower.png" class="flower">
+		<p class="copyright"></p>
+		<script>
+			const d = new Date();
+			const year = d.getFullYear();
+
+			const copyright = `Soriya Thai Room &copy; Copyright ${year}`;
+			document.querySelector('.copyright').innerHTML = copyright;
+		</script>
+		<!-- Music-->
+		<iframe width="0" height="0" src="https://www.youtube.com/embed/x7K6UpzwwOc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</footer>
+
+	<!-- initialize AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+
+</body>
+</html>
+

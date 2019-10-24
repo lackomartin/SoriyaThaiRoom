@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soriya Thai Room | Salon za Thai masaže</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Službena web stranica salona za tradicionalnu tajlandsku masažu u Zagrebu">
+	<meta name="author" content="Martin Lacko">
+
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="mobile.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<img src="img/flower.png" class="lotos-logo">
+
+	<!--responsive menu -->
+    <div class="hamburger-menu">
+      <div class="bar"></div>  
+    </div>    
+            
+    <script>
+    (function () {
+      $('.hamburger-menu').on('click', function() {
+      $('.bar').toggleClass('animate');
+      var mobileNav = $('.mobile-nav');
+      mobileNav.toggleClass('hide show');
+    })
+    })();    
+    </script>
+        
+        
+    <div class="mobile-nav hide">
+    <ul>
+      <div class="li"><a href="index.html">početna</a></div>
+      <div class="li"><a href="onama.html">o nama</a></div>
+      <div class="li"><a href="osoblje.html">naše osoblje</a></div>
+      <div class="li"><a href="thai.html">thai masaža</a></div>
+      <div class="li"><a href="priprema.html">priprema za masažu</a></div>
+      <div class="li"><a href="ponuda.html">ponuda</a></div>
+      <div class="li"><a href="cjenik.html">cjenik</a></div>
+      <div class="li"><a href="rezervacije.html">rezervacije</a></div>
+      <div class="li"><a href="galerija.html">galerija</a></div>
+      <div class="li"><a href="kontakt.html">kontakt</a></div>
+    </ul>
+   </div>       
+   <!--end of responsive menu -->
+
+	<div class="menu-section">
+		<a href="index.html"><li>Početna</li></a>
+		<div class="dropdown">
+			  <a href="onama.html"><li>O nama &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="osoblje.html"><p class="li-dropdown">Naše osoblje</p></a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a href="thai.html"><li>Thai masaža &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="priprema.html"><p class="li-dropdown">Priprema za masažu</p></a>
+			  </div>
+			</div>
+		<a href="ponuda.html"><li>Ponuda</li></a>
+		<a href="cjenik.html"><li id="li-selected">Cjenik</li></a>
+		<a href="rezervacije.html"><li>Rezervacije</li></a>
+		<a href="galerija.html"><li>Galerija</li></a>
+		<a href="kontakt.html"><li>Kontakt</li></a>
+	</div>
+
+	<div class="priceList-section">
+
+		<div class="header-description">
+			<p class="header-section-h">Odaberite željenu masažu</p>
+		</div>
+
+		<div id="massage" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/flower.png" class="price-lotos" width="100%" height="100%">
+			<div class="massage-description">
+				<p class="massage-h">Tradicionalna tajlandska masaža</p><br>
+				Terapijska masaža stara više od 2500 godina, koja povezuje akupresurnu tehniku s ayurvedom i pasivnom jogom, ponekad zvanom joga za lijene. Uklanja napetost mišića i zglobova i jača ih istovremeno. Ovom masažom riješite se bolova u glavi, leđima, vratu, nogama i poboljšava limfni i krvožilni sustav.
+				<br><br>
+				<span>Uz odabranu masažu moguće je i korištenje saune u trajanju od 15 min. Opustite se uz mirise eteričnih ulja.</span>
+			</div>
+			
+			<div class="minutes-space">
+				<div class="minutes1" onclick="getMinutes(this.id, this);" id="Tradicionalna tajlandska masaža">60</div><p class="price">250 HRK</p>
+				<div class="minutes2" onclick="getMinutes(this.id, this);" id="Tradicionalna tajlandska masaža">90</div><p class="price">330 HRK</p>
+				<div class="minutes3" onclick="getMinutes(this.id, this);" id="Tradicionalna tajlandska masaža">120</div><p class="price">400 HRK</p>
+			</div>
+			<p class="select-min">Odaberite vrijeme trajanja masaže(min):</p>
+			<p class="select-sauna"> vrijeme korištenja saune (min) 15   - 50 HRK</p>
+		</div>
+
+		<div id="massage-gray" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/flower.png" class="price-lotos" width="100%" height="100%">
+			<div class="massage-description">
+				<p class="massage-h">Tradicionalna tajlandska masaža u paru</p><br>
+				Terapijska masaža stara više od 2500 godina, koja povezuje akupresurnu tehniku s ayurvedom i pasivnom jogom, ponekad zvanom joga za lijene. Uklanja napetost mišića i zglobova i jača ih istovremeno. Ovom masažom riješite se bolova u glavi, leđima, vratu, nogama i poboljšava limfni i krvožilni sustav.
+				<br><br>
+				<span>Uz odabranu masažu moguće je i korištenje saune u trajanju od 15 min. Opustite se uz mirise eteričnih ulja.</span>
+			</div>
+			
+			<div class="minutes-space">
+				<div class="minutes1" onclick="getMinutes(this.id, this);" id="Tradicionalna tajlandska masaža u paru">60</div><p class="price">430 HRK</p>
+				<div class="minutes2" onclick="getMinutes(this.id, this);" id="Tradicionalna tajlandska masaža u paru">90</div><p class="price">560 HRK</p>
+				<div class="minutes3" onclick="getMinutes(this.id, this);" id="Tradicionalna tajlandska masaža u paru">120</div><p class="price">680 HRK</p>
+			</div>
+			<p class="select-min">Odaberite vrijeme trajanja masaže(min):</p>
+			<p class="select-sauna"> vrijeme korištenja saune (min) 15   - 50 HRK</p>
+		</div>
+
+		<div id="massage" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/flower.png" class="price-lotos" width="100%" height="100%">
+			<div class="massage-description">
+				<p class="massage-h">Uljna masaža, piling tijela i aromaterapija-masaža odabranim tajlandskim i hrvatskim uljima</p><br>
+				Opuštajuća tajlandska masaža odabranim aromatičnim uljima. Povezuje tehnike akupresure i ayurvedsku filozofiju masaže. Ojačava imunološki i živčani sustav. Tajlandska masaža uljem uklanja toksine, pojačava tonus kože i donosi duboko opuštanje.
+				<br><br>
+				<span>Uz odabranu masažu moguće je i korištenje saune u trajanju od 15 min. Opustite se uz mirise eteričnih ulja.</span>
+			</div>
+			
+			<div class="minutes-space">
+				<div class="minutes1" onclick="getMinutes(this.id, this);" id="Uljna masaža, piling tijela i aromaterapija-masaža odabranim tajlandskim i hrvatskim uljima">60</div><p class="price">280 HRK</p>
+				<div class="minutes2" onclick="getMinutes(this.id, this);" id="Uljna masaža, piling tijela i aromaterapija-masaža odabranim tajlandskim i hrvatskim uljima">90</div><p class="price">380 HRK</p>
+				<div class="minutes3" onclick="getMinutes(this.id, this);" id="Uljna masaža, piling tijela i aromaterapija-masaža odabranim tajlandskim i hrvatskim uljima">120</div><p class="price">450 HRK</p>
+			</div>
+			<p class="select-min">Odaberite vrijeme trajanja masaže(min):</p>
+			<p class="select-sauna"> vrijeme korištenja saune (min) 15   - 50 HRK</p>
+		</div>
+
+		<div id="massage-gray" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/flower.png" class="price-lotos" width="100%" height="100%">
+			<div class="massage-description">
+				<p class="massage-h">Tajlandska masaža vrućim biljnim kompresama</p><br>
+				Komprese su pamučne vrećice koje sadrže mješavinu odabranih trava. Zagrijavaju se na pari i imaju blagotvoran učinak na ljudsko tijelo. Biljni oblozi zagrijavaju se prije masaže kako bi se izdvojila esencijalna ulja. Ova masaža ima snažan, opuštajući učinak, uklanja bol i poboljšava metabolizam.
+				<br><br>
+				<span>Uz odabranu masažu moguće je i korištenje saune u trajanju od 15 min. Opustite se uz mirise eteričnih ulja.</span>
+			</div>
+			<div class="minutes-space">
+				<div class="minutes1" onclick="getMinutes(this.id, this);" id="Tajlandska masaža vrućim biljnim kompresama">60</div><p class="price">270 HRK</p>
+				<div class="minutes2" onclick="getMinutes(this.id, this);" id="Tajlandska masaža vrućim biljnim kompresama">90</div><p class="price">350 HRK</p>
+				<div class="minutes3" onclick="getMinutes(this.id, this);" id="Tajlandska masaža vrućim biljnim kompresama">120</div><p class="price">420 HRK</p>
+			</div>
+			<p class="select-min">Odaberite vrijeme trajanja masaže(min):</p>
+			<p class="select-sauna"> vrijeme korištenja saune (min) 15   - 50 HRK</p>
+		</div>
+
+		<div id="massage" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/flower.png" class="price-lotos" width="100%" height="100%">
+			<div class="massage-description">
+				<p class="massage-h">Masaža glave, lica, vrata, ramena i leđa</p><br>
+				Unatoč fokusiranju na gornje dijelove tijela, kao što su leđa, ramena, vrat i glava, maserka također masira druge dijelove tijela kako bi održala energetsku ravnotežu. Tijekom masaže koristi biljni balzam koji poboljšava prirodni napredak u ozdravljenju. Masaža uklanja kroničnu i posttraumatsku bol iz različitih dijelova kralježnice, a pomaže i kod migrene.
+				<br><br>
+				<span>Uz odabranu masažu moguće je i korištenje saune u trajanju od 15 min. Opustite se uz mirise eteričnih ulja.</span>
+			</div>
+			<div class="minutes-space">
+				<div class="minutes1" onclick="getMinutes(this.id, this);" id="Masaža glave, lica, vrata, ramena i leđa">60</div><p class="price">250 HRK</p>
+				<div class="minutes2" onclick="getMinutes(this.id, this);" id="Masaža glave, lica, vrata, ramena i leđa">90</div><p class="price">340 HRK</p>
+				<div class="minutes3" onclick="getMinutes(this.id, this);" id="Masaža glave, lica, vrata, ramena i leđa">120</div><p class="price">400 HRK</p>
+			</div>
+			<p class="select-min">Odaberite vrijeme trajanja masaže(min):</p>
+			<p class="select-sauna"> vrijeme korištenja saune (min) 15   - 50 HRK</p>
+		</div>
+
+		<div id="massage-gray" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/flower.png" class="price-lotos" width="100%" height="100%">
+			<div class="massage-description">
+				<p class="massage-h">Masaža stopala - refleksologija</p><br>
+				Intenzivna masaža koja uključuje dno i vrh stopala, nožnih prstiju, gležnjeva, tetiva i koljena. Zahvaljujući pritisku na određene točke na nogama, masaža pomaže u detoksikaciji, poboljšava san i uklanja osjećaj "umornih nogu". Pomaže i kod procesa probave te stabilizacije hormonskog i živčanog sustava.
+				<br><br>
+				<span>Uz odabranu masažu moguće je i korištenje saune u trajanju od 15 min. Opustite se uz mirise eteričnih ulja.</span>
+			</div>
+			<div class="minutes-space">
+				<div class="minutes30" onclick="getMinutes(this.id, this);" id="Masaža stopala - refleksologija">30</div><p class="price">150 HRK</p>
+				<div class="minutes2" onclick="getMinutes(this.id, this);" id="Masaža stopala - refleksologija">60</div><p class="price">230 HRK</p>
+			</div>
+			<p class="select-min">Odaberite vrijeme trajanja masaže(min):</p>
+			<p class="select-sauna"> vrijeme korištenja saune (min) 15   - 50 HRK</p>
+		</div>
+
+		<div id="massage" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/flower.png" class="price-lotos" width="100%" height="100%">
+			<div class="massage-description">
+				<p class="massage-h">Hot-stone masaža (masaža vrućim vulkanskim kamenjem)</p><br>
+				Tijekom masaže vrućim kamenom, glatko, ravno i grijano kamenje postavlja se na određene dijelove vašeg tijela. Kamenje je obično izrađeno od bazalta, vrste vulkanske stijene koja zadržava toplinu. Prema zdravstvenim službama Sveučilišta u New Hampshireu, vruće kamenje za masažu zagrijava se na temperaturu između 130 i 145 stupnjeva.
+				<br><br>
+				<span>Uz odabranu masažu moguće je i korištenje saune u trajanju od 15 min. Opustite se uz mirise eteričnih ulja.</span>
+			</div>
+			<div class="minutes-space">
+				<div class="minutes1" onclick="getMinutes(this.id, this);" id="Hot-stone masaža (masaža vrućim vulkanskim kamenjem)">90</div><p class="price">360 HRK</p>
+			</div>
+			<p class="select-min">Odaberite vrijeme trajanja masaže(min):</p>
+			<p class="select-sauna"> vrijeme korištenja saune (min) 15   - 50 HRK</p>
+		</div>
+
+		<div id="massage-gray" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/flower.png" class="price-lotos" width="100%" height="100%">
+			<div class="massage-description">
+				<p class="massage-h">Masaža za mršavljenje</p><br>
+				Opuštajuća tajlandska masaža anticelulitnim i učvršćujućim uljima. Usredotočuje se na one dijelove tijela kojima je potrebno mršavljenje, ali masiraju se i drugi dijelovi tijela. Ova masaža smanjuje masno tkivo i pomaže u smanjenju celulita i učvršćuje kožu. Pomaže dijeti i tjelesnim aktivnostima s gubitkom kilograma.
+				<br><br>
+				<span>Uz odabranu masažu moguće je i korištenje saune u trajanju od 15 min. Opustite se uz mirise eteričnih ulja.</span>
+			</div>
+			<div class="minutes-space">
+				<div class="minutes1" onclick="getMinutes(this.id, this);" id="Masaža za mršavljenje">60</div><p class="price">250 HRK</p>
+				<div class="minutes2" onclick="getMinutes(this.id, this);" id="Masaža za mršavljenje">90</div><p class="price">330 HRK</p>
+			</div>
+			<p class="select-min">Odaberite vrijeme trajanja masaže(min):</p>
+			<p class="select-sauna"> vrijeme korištenja saune (min) 15   - 50 HRK</p>
+		</div>
+
+		<div id="massage" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/flower.png" class="price-lotos" width="100%" height="100%">
+			<div class="massage-description">
+				<p class="massage-h">Masaža za seniore</p><br>
+				Uklanja napetost mišića i zglobova, istovremeno ih jačajući, što oslobađa od boli. Potiče limfni i krvožilni sustav. U ovoj masaži koriste se biljna ulja koja pomažu u prirodnom oporavku i procesu ozdravljenja.
+				<br><br>
+				<span>Uz odabranu masažu moguće je i korištenje saune u trajanju od 15 min. Opustite se uz mirise eteričnih ulja.</span>
+			</div>
+			<div class="minutes-space">
+				<div class="minutes1" onclick="getMinutes(this.id, this);" id="Masaža za seniore">60</div><p class="price">210 HRK</p>
+				<div class="minutes2" onclick="getMinutes(this.id, this);" id="Masaža za seniore">90</div><p class="price">340 HRK</p>
+			</div>
+			<p class="select-min">Odaberite vrijeme trajanja masaže(min):</p>
+			<p class="select-sauna"> vrijeme korištenja saune (min) 15   - 50 HRK</p>
+		</div>
+
+		<div id="massage-gray" data-aos="fade-up" data-aos-duration="1000">
+			<img src="img/flower.png" class="price-lotos" width="100%" height="100%">
+			<div class="massage-description">
+				<p class="massage-h">Masaža za atlete</p><br>
+				Tajlandska masaža za atlete skraćuje vrijeme regeneracije nakon intenzivnog napora i poboljšava fizički oblik u svakodnevnom vježbanju. Uklanja iscrpljenost, smanjuje vjerojatnost kontuzije i pomaže u bržem oporavku snage, opušta istegnute i ukočene mišiće, umanjuje bol uzrokovanu vježbom.
+				<br><br>
+				<span>Uz odabranu masažu moguće je i korištenje saune u trajanju od 15 min. Opustite se uz mirise eteričnih ulja.</span>
+			</div>
+			<div class="minutes-space">
+				<div class="minutes1" onclick="getMinutes(this.id, this);" id="Masaža za atlete">60</div><p class="price">300 HRK</p>
+				<div class="minutes2" onclick="getMinutes(this.id, this);" id="Masaža za atlete">90</div><p class="price">400 HRK</p>
+				<div class="minutes3" onclick="getMinutes(this.id, this);" id="Masaža za atlete">120</div><p class="price">500 HRK</p>
+			</div>
+			<p class="select-min">Odaberite vrijeme trajanja masaže(min):</p>
+			<p class="select-sauna"> vrijeme korištenja saune (min) 15   - 50 HRK</p>
+		</div>
+
+	</div>
+
+	<footer>
+		<img src="img/flower.png" class="flower">
+		<p class="copyright"></p>
+		<script>
+			const d = new Date();
+			const year = d.getFullYear();
+
+			const copyright = `Soriya Thai Room &copy; Copyright ${year}`;
+			document.querySelector('.copyright').innerHTML = copyright;
+		</script>
+		<!-- Music -->
+		<iframe width="0" height="0" src="https://www.youtube.com/embed/x7K6UpzwwOc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</footer>
+
+	<script src="js/reservation.js"></script>
+
+	<!-- initialize AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soriya Thai Room | Salon za Thai masaže</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Službena web stranica salona za tradicionalnu tajlandsku masažu u Zagrebu">
+	<meta name="author" content="Martin Lacko">
+
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="mobile.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" href="lightbox.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/lightbox-plus-jquery.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  	<script src="js/lightbox.js"></script>
+</head>
+<body>
+	<img src="img/flower.png" class="lotos-logo">
+
+	<!--responsive menu -->
+    <div class="hamburger-menu">
+      <div class="bar"></div>  
+    </div>    
+            
+    <script>
+    (function () {
+      $('.hamburger-menu').on('click', function() {
+      $('.bar').toggleClass('animate');
+      var mobileNav = $('.mobile-nav');
+      mobileNav.toggleClass('hide show');
+    })
+    })();    
+    </script>
+        
+        
+   <div class="mobile-nav hide">
+    <ul>
+      <div class="li"><a href="index.html">početna</a></div>
+      <div class="li"><a href="onama.html">o nama</a></div>
+      <div class="li"><a href="osoblje.html">naše osoblje</a></div>
+      <div class="li"><a href="thai.html">thai masaža</a></div>
+      <div class="li"><a href="priprema.html">priprema za masažu</a></div>
+      <div class="li"><a href="ponuda.html">ponuda</a></div>
+      <div class="li"><a href="cjenik.html">cjenik</a></div>
+      <div class="li"><a href="rezervacije.html">rezervacije</a></div>
+      <div class="li"><a href="galerija.html">galerija</a></div>
+      <div class="li"><a href="kontakt.html">kontakt</a></div>
+    </ul>
+   </div>       
+   <!--end of responsive menu -->
+
+	<div class="menu-section">
+		<a href="index.html"><li>Početna</li></a>
+		<div class="dropdown">
+			  <a href="onama.html"><li id="li-selected">O nama &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="osoblje.html"><p class="li-dropdown">Naše osoblje</p></a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a href="thai.html"><li>Thai masaža &#x25BE;</li></a>
+			  <div class="dropdown-content">
+			  <a href="priprema.html"><p class="li-dropdown">Priprema za masažu</p></a>
+			  </div>
+			</div>
+		<a href="ponuda.html"><li>Ponuda</li></a>
+		<a href="cjenik.html"><li>Cjenik</li></a>
+		<a href="rezervacije.html"><li>Rezervacije</li></a>
+		<a href="galerija.html"><li>Galerija</li></a>
+		<a href="kontakt.html"><li>Kontakt</li></a>
+	</div>
+
+	<div class="about-us-section">
+		<h6>Dobrodošli u <p style="font-family: 'Indie Flower', cursive; display: inline-block;">“Soriya Thai Room”</p></h6> 
+
+		<p class="about-txt" data-aos="fade-in" data-aos-duration="1500">	
+			<br><br>Salon Soriya Thai Room tradicionalne tajlandske masaže ugnijezdio se u podnožju staroga burga Medvedgrada, podno zelene oaze zagrebačke gore Sljeme.
+			<br><br>
+			 Smješten malo dalje od najužeg, urbanog centra grada, u prirodnom okruženju zelenila i voda, ovoj, više od 2500 godina drevnoj tehnici iscjeljivanja duha i tijela dodirom ruku, pogoduje prisustvo brojnih šumećih izvora, koji potiču izvore energije tijela i vrijednosti osjećaja.
+
+			 <br><br>
+			  Jer, tehnika tradicionalne tajlandske masaže, svojom životnošću, nalik je životnosti brojnih izvora i potoka koji ovdje vječno teku i svojim šumom i bistrinom, stoljećima unose osjećaj mira i harmonije.
+		</p>
+
+		<img src="img/potok.jpg" class="thai-massage-img">
+
+		<p class="about-txt-2" data-aos="fade-in" data-aos-duration="1500">
+			Želja nam je da naši klijenti osjete opuštajuću snagu <i>dodira ruku</i> koje svojom iscjeliteljskom moći, nalik izvorskom toku, prodiru u blokirane energetske kanale tijela, pokrećući blokiranu energiju duha i tijela.<br><br>
+			
+			Tradicionalna tajlandska masaža cjeloživotno je učenje, kultura i sastavni dio života naših terapeutkinja, te uz postojeće certificate za obuku i iskustvo, u naš svijet donose dio autentičnog, civilizacijskog dobra naroda, dašak dalekog Tajlanda.<br><br>
+
+			Nogama uronjenim u tajlandsku zdjelicu mirisne vode i cvijeća započinje vaš mali, rajski doživljaj odabrane masaže, a mirisnim čajem i voćem, posluženim u opuštajućem plavom salonu bazena, poslije masaže, saune ili tuširanja, završava.
+
+			<img src="img/foot.png" class="img-about-us">
+		</p>
+
+		<p class="quote" data-aos="fade-up" data-aos-duration="1000">"Masaža nije samo luksuz, ona je način za zdraviji i sretniji život."</p>
+		
+	</div>
+		
+	<footer>
+		<img src="img/flower.png" class="flower">
+		<p class="copyright"></p>
+		<script>
+			const d = new Date();
+			const year = d.getFullYear();
+
+			const copyright = `Soriya Thai Room &copy; Copyright ${year}`;
+			document.querySelector('.copyright').innerHTML = copyright;
+		</script>
+		<!-- Music-->
+		<iframe width="0" height="0" src="https://www.youtube.com/embed/x7K6UpzwwOc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</footer>
+
+	<!-- initialize AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+
+</body>
+</html>
